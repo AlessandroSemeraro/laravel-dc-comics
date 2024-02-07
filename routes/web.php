@@ -21,4 +21,5 @@ Route::get('/', function () {
 
 Route::get('/comics',[GuestComicController::class, 'index'])->name('guest.comics.index');
 Route::get('/comics/create',[GuestComicController::class, 'create'])->name('guest.comics.create');
+Route::post('/comics',[GuestComicController::class, 'store'])->name('guest.comics.store');
 Route::get('/comics/{comic}',[GuestComicController::class, 'show'])->name('guest.comics.show');

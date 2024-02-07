@@ -4,8 +4,8 @@
 <section class="container">
     <div class="row">
         <div class="d-flex justify-content-center col-12">
-            <h1>Add new Comic:</h1>
-            <form  action="">
+            <form  action="{{route('guest.comics.store')}}" method="POST">
+                @csrf
                 <div class="mb-4 d-flex justify-content-between" >
                     <label for="title" class="form-label">Title:</label>
                     <input type="text" name="title" id="title">
