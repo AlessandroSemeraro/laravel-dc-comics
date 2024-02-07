@@ -27,7 +27,9 @@
                             <p>
                                 Price: {{ $comic->price }}
                             </p>
-                            
+                            <a href="{{route('guest.comics.edit' , $comic->id)}}">
+                                <button type="button" class="btn btn-info">Edit Comic</button>
+                            </a>
                         </div>
                     </div>
                 </div>

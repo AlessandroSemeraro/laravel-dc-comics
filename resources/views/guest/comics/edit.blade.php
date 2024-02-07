@@ -6,13 +6,14 @@
         <div class="d-flex justify-content-center col-12">
             <form  action="{{route('guest.comics.update', $comic->id)}}" method="POST">
                 @csrf
+                @method ('PUT')
                 <div class="mb-4 d-flex justify-content-between" >
                     <label for="title" class="form-label">Edit title:</label>
                     <input type="text" name="title" id="title" value="{{$comic->title}}">
                 </div>
                 <div class="mb-4 d-flex justify-content-between">
                     <label for="description" class="form-label">Edit description:</label>
-                    <input type="text" name="description" id="description" value="{{$comic->description}}">
+                    <textarea type="text" name="description" id="description" >{{$comic->description}}</textarea>
                 </div>
                 <div class="mb-4 d-flex justify-content-between">
                     <label for="thumb" class="form-label">Change Image url:</label>

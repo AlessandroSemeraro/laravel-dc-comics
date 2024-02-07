@@ -12,7 +12,7 @@
                 </div>
                 <div class="mb-4 d-flex justify-content-between">
                     <label for="description" class="form-label">Description:</label>
-                    <input type="text" name="description" id="description">
+                    <textarea type="text" name="description" id="description" ></textarea>
                 </div>
                 <div class="mb-4 d-flex justify-content-between">
                     <label for="thumb" class="form-label">Image url:</label>
@@ -34,9 +34,7 @@
                     <label for="type" class="form-label">Type:</label>
                     <input type="text" name="type" id="type">
                 </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="me-3 btn btn-success">Submit</button>
-                    <button type="button" class="btn btn-info">Edit Comic</button>
+                <button type="button" class="me-3 btn btn-success">Submit</button>  
                 </div>
             </form>
         </div>
