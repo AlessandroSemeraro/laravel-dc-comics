@@ -34,7 +34,10 @@
                     <label for="type" class="form-label">Type:</label>
                     <input type="text" name="type" id="type">
                 </div>
-                <button class="mb-4 btn btn-success">Submit</button>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="me-3 btn btn-success">Submit</button>
+                    <button type="button" class="btn btn-info">Edit Comic</button>
+                </div>
             </form>
         </div>
     </div>
